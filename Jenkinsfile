@@ -7,6 +7,7 @@ pipeline {
     APP_NAME = 'helloworld-springboot'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
     DOCKER_REGISTRY_ORG = 'yutingliu'
+    DOCKER_REGISTRY = 'gcr.azk8s.cn'
   }
   stages {
     stage('CI Build and push snapshot') {
